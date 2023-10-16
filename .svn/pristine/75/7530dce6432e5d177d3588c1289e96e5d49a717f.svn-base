@@ -1,0 +1,79 @@
+/* css 리셋 */
+@import "reset.css";
+
+/* 폰트적용 */
+@font-face {
+  font-family: "NPSfontBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* body {
+  width: 100%;
+  height: 100%;
+  font-family: "NPSfontBold", "Malgun Gothic", "굴림", "Gulim", "Arial";
+} */
+
+body * {
+  color: #4d2222;
+}
+
+#container {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 200px;
+  display: flex;
+}
+
+/* 헤더 */
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu {
+  display: flex;
+}
+
+.submenu {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.submenu:hover {
+  background: #ccc;
+}
+.submenu:hover .submenu > .menuitem {
+}
+
+.menuitem {
+  transition: all 0.5s;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* 섹션 */
+section {
+  width: 100%;
+  height: 500px;
+}
+
+/* 푸터 */
+footer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+}
+
+header,
+footer,
+section,
+div {
+  border: 1px solid #ccc;
+}

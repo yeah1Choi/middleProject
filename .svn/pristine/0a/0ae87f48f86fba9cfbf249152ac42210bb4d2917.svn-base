@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>메인페이지</title>
+<script src="../js/jquery-3.7.1.min.js"></script>
+<link rel="stylesheet" href="../css/mainIndex.css">
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".menuitem").hover(
+            function() {
+                // 마우스를 올렸을 때
+                $(".submenu").css({ "visibility": "visible", "height": "160px" });
+				$(".subbck").css({ "visibility": "visible", "height": "160px" });
+            },
+            function() {
+                // 마우스를 벗어났을 때
+                $(".submenu").css({ "visibility": "hidden", "height": "0" });
+				$(".subbck").css({ "visibility": "hidden", "height": "0" });
+            }
+        );
+    });
+</script>
+</head>
+<body>
+	<div id="container">
+		<!-- 헤더 -->
+		<header>
+			<div id="mnflex">
+			<div id="logo">
+				<img src="../images/perm_logo.png" alt="perm_logo">
+			</div>
+			<ul id="menu">
+				<li class="menuitem"><a class="fff">시설안내</a>
+					<div class="subbck"></div>
+					<ul class="submenu">
+						<li class="subitem fff">캠핑장 소개</li>
+						<li class="subitem fff">오시는 길</li>
+					</ul></li>
+				<li class="menuitem"><a>고객센터</a>
+					<ul class="submenu">
+						<li class="subitem">FAQ</li>
+						<li class="subitem">공지사항</li>
+						<li class="subitem">이용후기</li>
+					</ul></li>
+				<li class="menuitem"><a>예약하기</a></li>
+			</ul>
+			</div>
+			<div id="log">
+				<a href="#" id="logstatus"> 
+					<span>로그인</span> <!--로그인/로그아웃-->
+				</a> 
+				<span class="bar"> | </span>
+				<a href="#" id="logpage"> 
+					<span>회원가입</span> <!--회원가입/마이페이지-->
+				</a>
+			</div>
+		</header>
+
+		<!-- 섹션에 만들었던 부분 넣어주시면 됩니다 -->
+		<section></section>
+	</div>
+
+	<!-- 푸터 -->
+	<footer>
+		<div id="footlogo">
+			<img src="../images/perm_logo.png" alt="perm_logo">
+		</div>
+		<div id="footcontent">
+			<p>
+				<span>상호명: ㈜여행문화학교산책 대청호지점</span> <span> ㅣ </span> <span>대표자:
+					김성선</span> <span>사업자등록번호: 781-85-02064</span> <span> ㅣ </span> <span>통신판매신고번호:
+					제2022-대전대덕-0371호</span> <span> ㅣ </span> <span>호스팅제공자: (주)코덱스브리지</span>
+			</p>
+			<p>
+				<span>대표번호: 042-933-6575</span> <span> ㅣ </span> <span>주소:
+					대전광역시 대덕구 대청로424번길 200(미호동)</span> <span>문의시간: 9:00~19:00</span> <span>
+					ㅣ </span> <span>점심시간: 12:00~13:30</span>
+			</p>
+			<p>
+				<span>Copyright © 2020 대청호로하스캠핑장. All rights reserved.</span>
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>
