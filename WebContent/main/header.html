@@ -4,7 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../js/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="../css/header.css" />
+   	<style>
+   	/* 헤더 */
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  background: #d6d46d;
+  padding: 0 30px;
+}
+#mnflex {
+  display: flex;
+}
+#logo {
+  margin: 10px;
+  height: 50px;
+}
+#menu {
+  margin-left: 30px;
+  display: flex;
+}
+#menu li {
+  cursor: pointer;
+  line-height: 30px;
+}
+.subbck {
+  visibility: hidden;
+  height: 0;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  transition: all 0.7s;
+  width: 100%;
+  background: #d6d46dda;
+  z-index: 9;
+}
+.submenu {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  transition: all 0.7s;
+  overflow: hidden;
+  width: 100%;
+  z-index: 10;
+}
+.menuitem {
+  position: relative;
+  width: 150px;
+  padding: 20px;
+  overflow: visible;
+}
+.subitem {
+  box-sizing: border-box;
+  width: 150px;
+  padding: 10px;
+}
+#log {
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 30px;
+}
+   	</style>
     <script type="text/javascript">
       $(document).ready(function () {
         $(".menuitem").hover(
