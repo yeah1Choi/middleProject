@@ -29,3 +29,9 @@ section {
   transform: translate(-50%, -50%);
 }
 
+/* 소개 */
+#info {
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+}
