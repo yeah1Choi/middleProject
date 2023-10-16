@@ -1,9 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script src="../js/jquery-3.7.1.min.js"></script>
+<meta charset="UTF-8">
+<title>Footer</title>
+<script src="<%=request.getContextPath()%>/js/jquery-3.7.1.min.js"></script>
 <style>
 /* 푸터 */
 footer {
@@ -32,8 +34,8 @@ footer * {
 	<!-- 푸터 -->
 	<footer>
 		<div id="footlogo">
-			<a href="./mainPage.html"><img
-				src="../images/perm_logo.png" alt="perm_logo" /></a>
+			<a href="<%=request.getContextPath()%>/main/mainPage.html"><img
+				src="<%=request.getContextPath()%>/images/perm_logo.png" alt="perm_logo" /></a>
 		</div>
 		<div id="footcontent">
 			<p>

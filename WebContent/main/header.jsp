@@ -1,11 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="../js/jquery-3.7.1.min.js"></script>
-   	<style>
-   	/* 헤더 */
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Header</title>
+<script src="<%=request.getContextPath()%>/js/jquery-3.7.1.min.js"></script>
+<script>
+$(function(){
+    $(".menuitem").hover(
+        function () {
+          // 마우스를 올렸을 때
+          $(".submenu").css({ visibility: "visible", height: "160px" });
+          $(".subbck").css({ visibility: "visible", height: "160px" });
+        },
+        function () {
+          // 마우스를 벗어났을 때
+          $(".submenu").css({ visibility: "hidden", height: "0" });
+          $(".subbck").css({ visibility: "hidden", height: "0" });
+        }
+     );
+})
+</script>
+<style>
+/* 헤더 */
 header {
   width: 100%;
   height: auto;
@@ -69,31 +87,15 @@ header {
   box-sizing: border-box;
   line-height: 30px;
 }
-   	</style>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".menuitem").hover(
-          function () {
-            // 마우스를 올렸을 때
-            $(".submenu").css({ visibility: "visible", height: "160px" });
-            $(".subbck").css({ visibility: "visible", height: "160px" });
-          },
-          function () {
-            // 마우스를 벗어났을 때
-            $(".submenu").css({ visibility: "hidden", height: "0" });
-            $(".subbck").css({ visibility: "hidden", height: "0" });
-          }
-        );
-      });
-    </script>
-  </head>
-  <body>
+</style>
+</head>
+<body>
       <!-- 헤더 -->
       <header>
         <div id="mnflex">
           <div id="logo">
-            <a href="./mainPage.html"
-              ><img src="../images/perm_logo.png" alt="perm_logo"
+            <a href="<%=request.getContextPath()%>/main/mainPage.html"
+              ><img src="<%=request.getContextPath()%>/images/perm_logo.png" alt="perm_logo"
             /></a>
           </div>
           <ul id="menu">
@@ -102,10 +104,10 @@ header {
               <div class="subbck"></div>
               <ul class="submenu">
                 <li class="subitem">
-                  <a href="./infoPage.html" class="cc">캠핑장 소개</a>
+                  <a href="<%=request.getContextPath()%>/main/infoPage.html" class="cc">캠핑장 소개</a>
                 </li>
                 <li class="subitem">
-                  <a href="./mapPage.html" class="cc">오시는 길</a>
+                  <a href="<%=request.getContextPath()%>/main/mapPage.html" class="cc">오시는 길</a>
                 </li>
               </ul>
             </li>
@@ -132,5 +134,5 @@ header {
           </a>
         </div>
       </header>
-  </body>
+</body>
 </html>
