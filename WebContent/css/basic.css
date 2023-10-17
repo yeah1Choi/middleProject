@@ -23,11 +23,6 @@ body {
 	flex-direction: column;
 }
 
-body * {
-	color: #4d2222;
-	text-align: center;
-}
-
 /* 후버하면 글 색상 변경 */
 .cc {
 	transition: all 0.3s;

@@ -32,6 +32,10 @@ header {
   background: #d6d46d;
   padding: 0 30px;
 }
+header  * {
+	color: #4d2222;
+	text-align: center;
+}
 #mnflex {
   display: flex;
 }
@@ -94,7 +98,7 @@ header {
       <header>
         <div id="mnflex">
           <div id="logo">
-            <a href="<%=request.getContextPath()%>/main/mainPage.html"
+            <a href="<%=request.getContextPath()%>/main/mainPage.jsp"
               ><img src="<%=request.getContextPath()%>/images/perm_logo.png" alt="perm_logo"
             /></a>
           </div>
@@ -104,10 +108,10 @@ header {
               <div class="subbck"></div>
               <ul class="submenu">
                 <li class="subitem">
-                  <a href="<%=request.getContextPath()%>/main/infoPage.html" class="cc">캠핑장 소개</a>
+                  <a href="<%=request.getContextPath()%>/main/infoPage.jsp" class="cc">캠핑장 소개</a>
                 </li>
                 <li class="subitem">
-                  <a href="<%=request.getContextPath()%>/main/mapPage.html" class="cc">오시는 길</a>
+                  <a href="<%=request.getContextPath()%>/main/mapPage.jsp" class="cc">오시는 길</a>
                 </li>
               </ul>
             </li>

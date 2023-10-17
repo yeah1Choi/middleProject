@@ -6,6 +6,12 @@
 <meta charset="UTF-8">
 <title>오시는 길</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css" />
+<style type="text/css">
+#map * {
+	color: #4d2222;
+	text-align: center;
+}
+</style>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/mapPage.css" />
 <script src="<%=request.getContextPath()%>/js/jquery-3.7.1.min.js"></script>
 <script>

@@ -6,6 +6,12 @@
 <meta charset="UTF-8">
 <title>메인페이지</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css" />
+<style type="text/css">
+#location * {
+	color: #4d2222;
+	text-align: center;
+}
+</style>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/mainPage.css" />
 <script src="<%=request.getContextPath()%>/js/jquery-3.7.1.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />

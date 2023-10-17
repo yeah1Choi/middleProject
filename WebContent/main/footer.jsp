@@ -34,7 +34,7 @@ footer * {
 	<!-- 푸터 -->
 	<footer>
 		<div id="footlogo">
-			<a href="<%=request.getContextPath()%>/main/mainPage.html"><img
+			<a href="<%=request.getContextPath()%>/main/mainPage.jsp"><img
 				src="<%=request.getContextPath()%>/images/perm_logo.png" alt="perm_logo" /></a>
 		</div>
 		<div id="footcontent">

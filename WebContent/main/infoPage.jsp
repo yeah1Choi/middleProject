@@ -7,14 +7,19 @@
 <title>캠핑장 소개</title>
 <link rel="stylesheet"
 	href="<%=request.getContextPath()%>/css/basic.css" />
-<link rel="stylesheet"
-	href="<%=request.getContextPath()%>/css/infoPage.css" />
+<style type="text/css">
+#info * {
+	color: #4d2222;
+	text-align: center;
+}
+</style>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/css/infoPage.css" />
 <script src="<%=request.getContextPath()%>/js/jquery-3.7.1.min.js"></script>
 <script>
 $(function(){
 	$("#header").load("<%=request.getContextPath()%>/main/header.jsp");
 	$("#footer").load("<%=request.getContextPath()%>/main/footer.jsp");
-	})
+})
 </script>
 </head>
 <body>
