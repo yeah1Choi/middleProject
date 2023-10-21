@@ -46,7 +46,7 @@
     		url : '<%= request.getContextPath()%>/cal.do',
     		type : 'get',
     		async : false,
-    		data : {'command' : 'calendar'},
+ //   		data : {'command' : 'calendar'},
     		success : function(res){
     			resdata = res;
     		},
